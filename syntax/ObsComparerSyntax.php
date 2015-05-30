@@ -18,15 +18,14 @@ if (empty($door43shared)) {
 /* @var $door43shared helper_plugin_door43shared */
 $door43shared->loadPluginBase();
 
-class syntax_plugin_door43obscomparer_OBSComparer extends Door43_Syntax_Plugin {
+class syntax_plugin_door43obscomparer_OBSComparerSyntax extends Door43_Syntax_Plugin {
 
     public function __construct() {
         parent::__construct('obscomparer', 'comparer.html');
     }
 
 	protected function getTextToRender($match) {
-		$html = '<h1>here</h1>';
-
-		return $html;
+		//$obsComparer = new plugin_door43obscomparer_ObsComparer();
+		return "test222444";
 	}
 }

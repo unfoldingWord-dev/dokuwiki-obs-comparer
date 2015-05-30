@@ -10,7 +10,7 @@
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
-class Door43comparer_Plugin_Base extends DokuWiki_Syntax_Plugin {
+class door43obscomparer_plugin_base extends DokuWiki_Syntax_Plugin {
 
     protected $specialMatch;
     protected $entryMatch;

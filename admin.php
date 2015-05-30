@@ -9,7 +9,7 @@
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
-class admin_plugin_door43obscomparer extends DokuWiki_Admin_Plugin {
+class plugin_door43obscomparer_ObsComparerAdmin extends DokuWiki_Admin_Plugin {
 	/**
 	 * @var door43Cache
 	 */
