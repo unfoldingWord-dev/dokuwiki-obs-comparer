@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
-	jQuery('.language > .container > .toggle-container > a.toggle').click(function(){
+
+	jQuery('.obs-comparer-container .language > .container > .toggle-container > a.toggle').click(function(){
 		jQuery(this).parents('.container').first().siblings('.chapters').toggle();
 		if(jQuery(this).html() == "▲")
 			jQuery(this).html("▼");
@@ -8,7 +9,7 @@ jQuery(document).ready(function(){
 		return false;
 	});
 
-	jQuery('.chapter > .container >  .toggle-container > a.toggle').click(function(){
+	jQuery('.obs-comparer-container .chapter > .container >  .toggle-container > a.toggle').click(function(){
 		jQuery(this).parents('.container').first().siblings('.frames').toggle();
 		if(jQuery(this).html() == "▲")
 			jQuery(this).html("▼");
@@ -17,8 +18,19 @@ jQuery(document).ready(function(){
 		return false;
 	});
 
-	jQuery('.frame > .container >  .toggle-container > a.toggle').click(function(){
-		jQuery(this).parents('.container').first().siblings('.sentences').toggle();
+	jQuery('.obs-comparer-container .frame > .container >  .toggle-container > a.toggle').click(function(){
+		var sentences = jQuery(this).parents('.container').first().siblings('.sentences');
+
+		sentences.toggle();
+
+		console.log(sentences.find('img'));
+		sentences.find('img').each(function(){
+			if($(this).attr('tmpsrc')) {
+				this.src = $(this).attr('tmpsrc');
+				$(this).attr('tmpsrc','')
+			}
+		});
+
 		if(jQuery(this).html() == "▲")
 			jQuery(this).html("▼");
 		else
