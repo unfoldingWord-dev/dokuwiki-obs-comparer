@@ -25,9 +25,9 @@ jQuery(document).ready(function(){
 
 		console.log(sentences.find('img'));
 		sentences.find('img').each(function(){
-			if($(this).attr('tmpsrc')) {
-				this.src = $(this).attr('tmpsrc');
-				$(this).attr('tmpsrc','')
+			if(jQuery(this).attr('tmpsrc')) {
+				this.src = jQuery(this).attr('tmpsrc');
+				jQuery(this).attr('tmpsrc','')
 			}
 		});
 
