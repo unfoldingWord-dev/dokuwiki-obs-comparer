@@ -63,3 +63,32 @@
     background-color: #f2dede;
     border-color: #eed3d7;
 }
+
+//#dokuwiki__pagetools ul li a.obs-comparer-pagetools-link:before {
+//  content: url(images/pagetools-sprite.png);
+//}
+//
+//#dokuwiki__pagetools ul li a.obs-comparer-pagetools-link:focus,
+//#dokuwiki__pagetools ul li a.obs-comparer-pagetools-link:active {
+//  background-image: url(images/pagetools-sprite.png);
+//}
+
+#dokuwiki__pagetools ul li a.obs-comparer-pagetools-link {
+  background-position: right -270px;
+  &:before { margin-top: -270px; }
+  &:hover, &:active, &:focus { background-position: right -315px; }
+}
+
+.mode_revisions #dokuwiki__pagetools ul li a.obs-comparer-pagetools-link {
+  background-position: right -315px;
+  &:before { margin-top: -315px; }
+}
+
+[dir=rtl] #dokuwiki__pagetools ul li a.obs-comparer-pagetools-link {
+  background-position: left -270px;
+  &:hover, &:active, &:focus { background-position: left -315px; }
+}
+
+[dir=rtl] .mode_revisions #dokuwiki__pagetools ul li a.obs-comparer-pagetools-link {
+  background-position: left -315px;
+}
