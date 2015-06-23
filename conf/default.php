@@ -5,4 +5,4 @@
  * @author Richard Mahn <rich@themahn.com>
  */
 
-//$conf['fixme']    = 'FIXME';
+$conf['comparer_showbutton']    = true;

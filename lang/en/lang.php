@@ -14,3 +14,4 @@ $lang['menu'] = 'Comparer';
 //Setup VIM: ex: et ts=4 :
 
 $lang['obsComparerPageToolsLinkText'] = 'Compare With Source';
+
